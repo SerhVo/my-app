@@ -5,8 +5,7 @@ import { PasswordInput } from '../Components/PasswordInput';
 import { Link } from '../Components/Link';
 import { Avatar } from '../Components/Avatar';
 
-
-const RegistrationScreen = () => {
+const RegistrationScreen = ({ navigation }) => {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -19,13 +18,14 @@ const RegistrationScreen = () => {
         Keyboard.dismiss();
     };
     const handlePress = () => {
-        Linking.openURL('https://example.com');
+        navigation.navigate("Login");
     };
+
     return (
-        <KeyboardAvoidingView style={styles.container} behavior={'height'}>
+        <KeyboardAvoidingView style={styles.container} behavior={'height'} onPress={() => Keyboard.dismiss()}>
             <ImageBackground style={styles.photoBg} source={require('../Image/PhotoBG.jpg')}>
                 <Avatar />
-                <View style={styles.containerReg} onPress={() => Keyboard.dismiss()}>
+                <View style={styles.containerReg} >
                     <Text style={styles.title}>Registration</Text>
                     <TextInput
                         style={[styles.input, isNameFocused && styles.inputFocused]}

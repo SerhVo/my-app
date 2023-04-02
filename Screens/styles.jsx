@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
         paddingRight: 16,
         justifyContent: 'flex-end',
         paddingTop: 92,
-        paddingBottom: 45
+        
     },
         containerLog: {
         width: '100%',
@@ -114,8 +114,11 @@ const styles = StyleSheet.create({
         paddingRight: 16,
         justifyContent: 'flex-end',
         paddingTop: 32,
-        paddingBottom: 111,
-    }
+        // paddingBottom: 111,
+    },
+    logPb: {
+        marginBottom: 111,
+    },
 });
 
 export default styles;

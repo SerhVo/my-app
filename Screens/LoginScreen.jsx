@@ -16,7 +16,7 @@ const LoginScreen = ({ password }) => {
     };
 
     const handlePress = () => {
-        Linking.openURL('https://example.com');
+        navigation.navigate("Login");
     };
 
     return (
@@ -33,19 +33,7 @@ const LoginScreen = ({ password }) => {
                         onFocus={() => setIsEmailFocused(true)}
                         onBlur={() => setIsEmailFocused(false)}
                     />
-                    {/* <TextInput
-        style={styles.input}
-        placeholder="Password"
-        value={password}
-        onChangeText={setPassword}
-        secureTextEntry
-      />
-      <TouchableOpacity style={styles.button} onPress={handleSubmit}>
-        <Text style={styles.buttonText}>Login</Text>
-      </TouchableOpacity> */}
-
                     <PasswordInput isPasswordFocused={isPasswordFocused} setIsPasswordFocused={setIsPasswordFocused} />
-
                     {!isEmailFocused && !isPasswordFocused && (
                         <TouchableOpacity style={styles.button} onPress={handleSubmit}>
                             <Text style={styles.buttonText}>Login</Text>
