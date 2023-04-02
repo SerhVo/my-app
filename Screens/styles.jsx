@@ -1,0 +1,121 @@
+import { StyleSheet } from 'react-native';
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: "flex-end",
+        backgroundColor: '#fff',
+        width: '100%',
+    },
+    title: {
+        fontSize: 30,
+        fontWeight: 500,
+        marginBottom: 33,
+        fontFamily: "Roboto",
+        fontStyle: 'normal',
+        textAlign: 'center',
+        color: '#212121',
+    },
+    textButTogle: {
+        fontSize: 16,
+        fontWeight: 400,
+        fontFamily: "Roboto",
+        fontStyle: 'normal',
+        color: '#1B4371',
+        position: 'absolute',
+        top: -12,
+        left: -40,
+    },
+    input: {
+        width: '100%',
+        height: 50,
+        backgroundColor: '#F6F6F6',
+        borderWidth: 1,
+        borderColor: '#E8E8E8',
+        borderRadius: 8,
+        paddingHorizontal: 10,
+        marginBottom: 16,
+        fontFamily: "Roboto",
+        color: '#BDBDBD',
+        // outlineWidth: 0,
+    },
+    inputFocused: {
+        borderColor: '#FF6C00',
+        color: '#212121',
+        backgroundColor: '#FFFFFF',
+    },
+
+    inputWidth: {
+        width: 250,
+        width: '100%',
+        height: 50,
+        fontFamily: "Roboto",
+        color: '#BDBDBD',
+        // outlineWidth: 0,
+    },
+    inputPassword: {
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'row',
+        width: '100%',
+        height: 50,
+        backgroundColor: '#F6F6F6',
+        borderWidth: 1,
+        borderColor: '#E8E8E8',
+        borderRadius: 8,
+        paddingHorizontal: 10,
+        marginBottom: 16,
+        fontFamily: "Roboto",
+        color: '#BDBDBD',
+        // outlineWidth: 0,
+    },
+
+    button: {
+        width: '100%',
+        height: 50,
+        backgroundColor: '#FF6C00',
+        borderRadius: 100,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginBottom: 16,
+        marginTop: 43,
+    },
+
+    buttonText: {
+        color: '#fff',
+        fontFamily: "Roboto",
+        fontSize: 16,
+        fontWeight: 400,
+    },
+    photoBg: {
+        width: 375,
+        height: '100%',
+        justifyContent: 'flex-end',
+    },
+    containerReg: {
+        width: '100%',
+        // height: 549,
+        backgroundColor: '#FFFFFF',
+        borderTopLeftRadius: 25,
+        borderTopRightRadius: 25,
+        paddingLeft: 16,
+        paddingRight: 16,
+        justifyContent: 'flex-end',
+        paddingTop: 92,
+        paddingBottom: 45
+    },
+        containerLog: {
+        width: '100%',
+        backgroundColor: '#FFFFFF',
+        borderTopLeftRadius: 25,
+        borderTopRightRadius: 25,
+        paddingLeft: 16,
+        paddingRight: 16,
+        justifyContent: 'flex-end',
+        paddingTop: 32,
+        paddingBottom: 111,
+    }
+});
+
+export default styles;
