@@ -45,7 +45,6 @@ const RegistrationScreen = ({ navigation }) => {
                         onBlur={() => setIsEmailFocused(false)}
                     />
                     <PasswordInput isPasswordFocused={isPasswordFocused} setIsPasswordFocused={setIsPasswordFocused} />
-
                     {!isEmailFocused && !isNameFocused && !isPasswordFocused && (
                         <TouchableOpacity style={styles.button} onPress={handleSubmit}>
                             <Text style={styles.buttonText}>Register</Text>

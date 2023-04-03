@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
 import { Keyboard, StyleSheet, TouchableWithoutFeedback, View } from 'react-native';
-import RegistrationScreen from './Screens/RegistrationScreen';
-import LoginScreen from './Screens/LoginScreen';
+import { AppNavigator } from './service/AppNavigator.jsx';
 
 
 export default function App() {
 
     return (
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-        <View style={styles.container} onPress={() => Keyboard.dismiss()}>
-            <RegistrationScreen />
-            {/* <LoginScreen /> */}
-        </View>
+            <View style={styles.container} onPress={() => Keyboard.dismiss()}>
+                <AppNavigator />
+            </View>
         </TouchableWithoutFeedback>
     );
 }

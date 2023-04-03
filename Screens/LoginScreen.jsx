@@ -4,7 +4,7 @@ import styles from './styles';
 import { PasswordInput } from '../Components/PasswordInput';
 import { Link } from '../Components/Link';
 
-const LoginScreen = ({ password }) => {
+const LoginScreen = ({ navigation, password }) => {
     const [email, setEmail] = useState('');
     const [isEmailFocused, setIsEmailFocused] = useState(false);
     const [isPasswordFocused, setIsPasswordFocused] = useState(false);
@@ -16,7 +16,7 @@ const LoginScreen = ({ password }) => {
     };
 
     const handlePress = () => {
-        navigation.navigate("Login");
+        navigation.navigate("Registration");
     };
 
     return (
