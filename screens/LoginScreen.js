@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { StackActions, CommonActions } from '@react-navigation/native';
+
 import { View, Text, TextInput, TouchableOpacity, Keyboard, KeyboardAvoidingView, ImageBackground } from 'react-native';
 import styles from './styles';
 import { PasswordInput } from '../Components/PasswordInput';
 import { Link } from '../Components/Link';
 
-const LoginScreen = ({ navigation, password }) => {
+const LoginScreen = ({ navigation }) => {
     const [email, setEmail] = useState('');
     const [isEmailFocused, setIsEmailFocused] = useState(false);
     const [isPasswordFocused, setIsPasswordFocused] = useState(false);
@@ -13,7 +15,19 @@ const LoginScreen = ({ navigation, password }) => {
     const handleSubmit = () => {
         console.log(`Email: ${email}, Password: ${password}`);
         Keyboard.dismiss();
-    };
+    navigation.dispatch(
+    CommonActions.reset({
+      index: 0,
+      routes: [{ name: 'Home' }],
+    })
+  );
+  navigation.dispatch(
+    StackActions.push('Posts', {
+      screen: 'Posts',
+      params: { name: 'Posts' },
+    })
+  );
+};
 
     const handlePress = () => {
         navigation.navigate("Registration");

@@ -16,6 +16,18 @@ const RegistrationScreen = ({ navigation }) => {
     const handleSubmit = () => {
         console.log(`Name: ${name}, Email: ${email}, Password: ${password}`);
         Keyboard.dismiss();
+        navigation.dispatch(
+            CommonActions.reset({
+                index: 0,
+                routes: [{ name: 'Home' }],
+            })
+        );
+        navigation.dispatch(
+            StackActions.push('Posts', {
+                screen: 'Posts',
+                params: { name: 'Posts' },
+            })
+        );
     };
     const handlePress = () => {
         navigation.navigate("Login");

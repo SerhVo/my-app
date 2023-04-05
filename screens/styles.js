@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 30,
-        fontWeight: 500,
+        // fontWeight: 500,
         marginBottom: 33,
         fontFamily: "Roboto",
         fontStyle: 'normal',
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     },
     textButTogle: {
         fontSize: 16,
-        fontWeight: 400,
+        // fontWeight: 400,
         fontFamily: "Roboto",
         fontStyle: 'normal',
         color: '#1B4371',
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontFamily: "Roboto",
         fontSize: 16,
-        fontWeight: 400,
+        // fontWeight: 400,
     },
     photoBg: {
         width: 375,

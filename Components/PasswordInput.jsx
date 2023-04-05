@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { View, TextInput, TouchableOpacity, Text } from 'react-native';
-import styles from '../Screens/styles';
+import styles from '../screens/styles';
 
 
 export const PasswordInput = ({ isPasswordFocused, setIsPasswordFocused }) => {
